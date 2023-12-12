@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPLOYEE FORM</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" lang="javascript" src="./script.js"></script>
+    <h1>Employee Registration Form</h1>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-10">
+                <label>Employee ID:</label>
+            </div>
+            <div class = "col-90">
+                <input type="number" id="employeeid" name="employeeid" placeholder="Enter your ID">
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-10">
+                <label>Employee Name:</label>
+            </div>
+            <div class = "col-90">
+                <input type="text" id="fname" name="firstname" placeholder="Enter your name">
+            </div>
+    </div>
+    <div class = "row">
+        <div class = "col-10">
+            <label>Email ID:</label>
+        </div>
+        <div class = "col-90">
+             <input type="text" id="mailID" name="Email" placeholder="Enter your Email">
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-10">
+            <label>Mobile No.:</label>
+        </div>
+        <div class = "col-90">
+            <input type="number" id="contactnumber" name="contactnumber" placeholder="Enter your contact number">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="gender" required>Gender:</label>
+        </div>
+        <div class="col-90">
+            <input type="radio" id="male" name="gender" value="male"/>Male
+            <input type="radio" id="female" name="gender" value="female"/>Female
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="dob">Date Of Birth:</label>
+        </div>
+        <div class="col-90">
+            <input type="Date" id="dob" name="dob">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="address">Address:</label>
+        </div>
+        <div class="col-90">
+            <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="city">City:</label>
+        </div>
+        <div class="col-90">
+            <input type="text" id="city" name="city" maxlength="10">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="pincode">Area PIN:</label>
+        </div>
+        <div class="col-90">
+            <input type="number" id="pin" name="pin" maxlength="6">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <label for="state">State:</label>
+        </div>
+        <div class="col-90">
+            <input type="text" id="state" name="state">
+        </div>
+    </div>
+    <div class="row">
+        <input type="submit" value="submit" onclick="SaveEmployeeDetails()">
+    </div>  
+   </div> 
+   
+</body>
+</html>
